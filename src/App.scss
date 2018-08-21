@@ -1,0 +1,132 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, #ff2205 0%, #843cd6 100%);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 1em;
+    color: rgb(207, 204, 204);
+    font-weight: 200;
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        color: rgb(207, 204, 204);
+      }
+}
+
+.calculator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 20px 3px 3px 3px;
+    background-color: black;
+}
+
+button {
+    color: white;
+    outline: none;
+    height: 5em;
+    border: 0.5px solid black;
+    font-weight: 800;
+    background-color: grey;
+    &.digit {
+        background-color: rgb(71, 71, 71);
+    }
+}
+button:hover {
+    color: black;
+    cursor: pointer;
+    border: 0.5px solid white;
+}
+
+.display {
+    background-color: black;
+    display: block;
+    color: #843cd6;
+    height: 50px;
+    width: 300px;
+    text-align: right;
+    line-height: 65px;
+    font-size: 2.5em;
+}
+
+.left {
+    flex: 75%;
+    flex-direction: column;
+}
+
+.right {
+    flex: 25%;
+    flex-direction: column;
+}
+
+.topRow {
+    display: flex;
+    padding-top: 0.3em;
+    #ac {
+        flex-grow: 2.21;
+        background-color: #fc3d3d;
+    }
+    .top {
+        flex: 1;
+    }
+}
+.topRow:first-child {
+    width: 150;
+}
+
+.rightTop {
+    display: flex;
+    padding-top: 0.3em;
+}
+
+.rightBut {
+    width: 75px;
+}
+
+.secRow {
+    display: flex;
+    .sec {
+        flex: 1;
+    }
+}
+
+.thirdRow {
+    display: flex;
+    .third {
+        flex: 1;
+    }
+}
+
+.fourthRow {
+    display: flex;
+    .fourth {
+        flex: 1;
+    }
+}
+
+.lastRow {
+    display: flex;
+    .last {
+        flex: 1;
+    }
+    #zero {
+        flex-grow: 2.21;
+    }
+}
+
+#equals {
+    background-color: rgb(0, 66, 128);
+    height: 133px;
+}
